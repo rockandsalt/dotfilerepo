@@ -1,0 +1,76 @@
+{
+	"folders": [
+		{
+			"path": "..",
+			"name" : "base_1"
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "(Windows) Launch",
+				"type": "cppvsdbg",
+				"request": "launch",
+				"program": "${workspaceFolder}\\build\\install\\bin\\Versa3d",
+				"args": [],
+				"stopAtEntry": false,
+				"cwd": "${workspaceFolder}",
+				"console": "integratedTerminal",
+				"environment": [
+					{
+						"name": "PATH",
+						"value": "C:\\Qt\\6.2.1\\msvc2019_64\\bin;C:\\Users\\m384wang\\vtk\\bin;${env:PATH}"
+					},
+					{
+						"name" : "QML_IMPORT_TRACE",
+						"value" : "1"
+					}
+				]
+			},
+			{
+				"name": "(Windows) Launch test",
+				"type": "cppvsdbg",
+				"request": "launch",
+				"program": "${workspaceFolder}\\build\\install\\bin\\VersaTest.exe",
+				"args": [],
+				"stopAtEntry": false,
+				"cwd": "${workspaceFolder}",
+				"console": "integratedTerminal",
+				"environment": [
+					{
+						"name": "PATH",
+						"value": "C:\\Qt\\6.2.1\\msvc2019_64\\bin;C:\\Users\\m384wang\\vtk\\bin;${env:PATH}"
+					}
+				]
+			}
+		]
+	},
+	"settings": {
+		"cmake.parallelJobs": 0,
+		"cmake.configureSettings": {
+			"CMAKE_PREFIX_PATH": "C:\\Qt\\6.2.1\\msvc2019_64",
+			"VTK_DIR" : "C:\\Users\\m384wang\\vtk\\lib\\cmake\\vtk-9.1",
+			"CMAKE_INSTALL_PREFIX" : "${workspaceFolder}/build/install"
+		},
+		"cmake.generator": "Ninja",
+		"C_Cpp.intelliSenseEngine": "Tag Parser",
+		"files.associations": {
+			"qobject": "cpp",
+			"filesystem": "cpp",
+			"qscopedpointer": "cpp",
+			"qsettings": "cpp",
+			"vector": "cpp",
+			"chrono": "cpp",
+			"functional": "cpp",
+			"optional": "cpp",
+			"regex": "cpp",
+			"system_error": "cpp",
+			"type_traits": "cpp",
+			"xlocmon": "cpp",
+			"xlocnum": "cpp",
+			"xtr1common": "cpp",
+			"qtglobal": "cpp"
+		}
+	}
+}
